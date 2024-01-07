@@ -72,9 +72,18 @@
     transition: 0.4s;
     color: #777474;
 }
-#button2{
-    float:right;
-}
 #button1{
     float:right;
+    background-color: rgb(34, 202, 217);
+    border-radius: 50%;
+    border-color: transparent;
+    z-index: 997;
+    position: relative;
+    color: #fff;
+    right: 15px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    
+    
 }
