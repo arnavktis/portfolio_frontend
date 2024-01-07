@@ -10,12 +10,14 @@
 
 }
 .profile-image{
-    background:rgb(30, 223, 197);
+    padding-top:7.5px;
+    text-align: center;
     border-radius: 50%;
     width: 120px;
     height: 120px;
     margin: 15px auto;
     transition: 0.7s;
+    // z-index: 9997;
 }
 .profile-name{
     text-align: center;
@@ -23,7 +25,7 @@
 .profile-image:hover{
     color: rgb(34, 202, 217);
     background: rgb(55, 80, 201);
-    border-radius: 10%;
+    border-radius: 30%;
     transition: 0.7s;
 }
 .social-links{
