@@ -1,0 +1,33 @@
+.skill-contianer{
+    margin-left: 300px;
+    background: #f5f8fd;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 60px 0;
+    overflow: hidden;
+}
+.skills-content{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+}
+.skills-content h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(9, 16, 53);;
+
+}
+.grid-container{
+    padding-right: 30px;
+    padding-left: 30px;
+    display: grid;
+    gap: 50x, 100px;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 200px 200px;
+
+}
+.image{
+    width: 300px;
+    height: 200px;
+}
