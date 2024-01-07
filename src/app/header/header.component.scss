@@ -4,17 +4,26 @@
     top:0;
     left:0;
     bottom:0;
-    background-color:bisque;
+    background-color:rgb(9, 16, 53);
+    color: #fff;
 
 }
 .profile-image{
     background:rgb(30, 223, 197);
+    border-radius: 50%;
     width: 120px;
     height: 120px;
     margin: 15px auto;
+    transition: 0.7s;
 }
 .profile-name{
     text-align: center;
+}
+.profile-image:hover{
+    color: rgb(34, 202, 217);
+    background: rgb(55, 80, 201);
+    border-radius: 10%;
+    transition: 0.7s;
 }
 .social-links{
     display:grid;
@@ -22,6 +31,28 @@
     width: 50%;
     margin: 0 auto;
     grid-gap: 10px;
+    justify-content: center;
+}
+.social-brand{
+    font-size: 18px;
+    display: inline-block;
+    background: #5263ad;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.4s;
+    
+}
+.social-brand:hover{
+    color: rgb(34, 202, 217);
+    background: rgb(9, 16, 53);
+    border-radius: 10%;
+
 }
 .navbar{
     display: flex ;
@@ -29,7 +60,16 @@
     padding: 30px 0 0 0;
     align-content: space-between;
     align-items: stretch;
+    color: #fff;
 }
-.navbar-brand:hover{
-    color: red;
+.navbar :hover{
+    color: rgb(34, 202, 217);
 }
+.navbar-brand{
+    margin-left: 15px;
+    padding: 12px 15px;
+    transition: 0.4s;
+    color: #777474;
+}
+
+
