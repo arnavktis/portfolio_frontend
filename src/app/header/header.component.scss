@@ -82,8 +82,14 @@
     color: #fff;
     right: 15px;
     top: 15px;
-    width: 40px;
-    height: 40px;
-    
-    
+    width: 45px;
+    height: 45px;
+    transition: 0.7s;
 }
+#button1:hover{
+    color: rgb(34, 202, 217);
+    background: rgb(124, 141, 224);
+    border-radius: 10%;
+    transition: 0.7s;
+}
+
