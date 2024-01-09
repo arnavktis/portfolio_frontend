@@ -2,9 +2,7 @@
     margin-left: 300px;
 }
 .about-content{
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 45px;
+    padding: 30px;
 }
 .about-content h1{
     font-size: 32px;
@@ -18,6 +16,7 @@
     display: flex;
 }
 .image{
+    border-radius: 5%;
     width:344px;
     height:344px;
 }
@@ -25,21 +24,101 @@
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
-
 }
 .grid-container{
-    padding-right: 30px;
-    padding-left: 10px;
     padding-bottom: 30px;
     display: grid;
     gap: 50x, 100px;
     justify-content: start;
-    grid-template-columns: 300px 300px ;
+    grid-template-columns: 223px 229px;
     grid-template-rows: 42px 42px 42px;
 }
 
 .about-content2 h1{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     color: rgb(9, 16, 53);;
 }
+@media (max-width:1199px) {
+    .about-row{
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .about-container{
+        justify-content: center;
+        align-items: center;
+        transition: 0.7s;
+        margin-left: 00px;
+    }
+    .image{
+        transition: 0.7s;
+        width:550px;
+        height:550px;
+        border-radius: 5%;
+    }
+    .about-content2{
+        display: flex;
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        transition:0.7s;
+    }
+    .grid-container{
+        grid-template-columns: 263px 247px ;
+        grid-template-rows: 42px 42px 53px;
+        transition:0.7s;
+    }
+    .about-para,
+    .about-para2 {
+        width:550px;
+    }
+}
+
+@media(min-width:1199px){
+    .about-row,
+    .about-container,
+    .grid-container,
+    .about-content2,
+    .image,
+    .about-para,
+    .about-container{
+        transition:0.7s;
+        scroll-behavior: smooth;
+    }
+}
+/*mobile media query*/
+
+@media(max-width:480px){
+    .image{
+        transition: 0.7s;
+        width:350px;
+        height:350px;
+        border-radius: 5%;
+    }
+    .about-content2{
+        display: flex;
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        transition:0.7s;
+    }
+    .about-content2 h1{
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(9, 16, 53);;
+    }
+    .grid-container{
+        grid-template-columns: 305px;
+        grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px;
+        justify-items: center;
+        padding-bottom: 10px;
+    }
+    .about-para,
+    .about-para2 {
+        width:350px;
+        text-align:center;
+    }
+}
+
+

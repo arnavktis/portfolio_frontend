@@ -97,4 +97,31 @@ a{
     border-radius: 10%;
     transition: 0.7s;
 }
+@media(max-width:1199px){
+    header{
+        margin-left: -300px;
+        transition:0.7s;
+    }
+}
+@media(min-width:1199px){
+    header{
+        transition:0.7s;
+    }
+    #button1{
+        z-index:-997;   
+    }
+}
 
+/*------------mobile media query-------------*/
+
+@media(max-width:480px){
+    #button1{
+        z-index: 997px;
+        right: 15px;
+        top: 15px;
+        width: 45px;
+        height: 45px;
+        transition: 0.7s;
+        position:fixed;
+    }
+}
