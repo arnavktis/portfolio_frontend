@@ -102,19 +102,21 @@ a{
         margin-left: -300px;
         transition:0.7s;
     }
+    
 }
 @media(min-width:1199px){
     header{
         transition:0.7s;
     }
-    #button1{
-        z-index:-997;   
+    #button1{ 
+        visibility: hidden; 
+
     }
 }
 
 /*------------mobile media query-------------*/
 
-@media(max-width:480px){
+@media (min-width:375px) and (max-width:767px){
     #button1{
         z-index: 997px;
         right: 15px;

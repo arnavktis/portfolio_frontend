@@ -33,12 +33,14 @@
     grid-template-columns: 223px 229px;
     grid-template-rows: 42px 42px 42px;
 }
-
 .about-content2 h1{
     font-size: 28px;
     font-weight: bold;
     color: rgb(9, 16, 53);;
 }
+
+
+
 @media (max-width:1199px) {
     .about-row{
         flex-wrap: wrap;
@@ -89,6 +91,7 @@
 }
 /*mobile media query*/
 
+
 @media(max-width:480px){
     .image{
         transition: 0.7s;
@@ -113,7 +116,7 @@
     .grid-container{
         grid-template-columns: 305px;
         grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px;
-        justify-items: center;
+        justify-items: left;
         padding-bottom: 10px;
     }
     .about-para,
