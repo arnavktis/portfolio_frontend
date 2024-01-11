@@ -91,39 +91,58 @@ a{
     height: 45px;
     transition: 0.7s;
 }
-#button1:hover{
-    color: rgb(34, 202, 217);
-    background: rgb(124, 141, 224);
-    border-radius: 10%;
-    transition: 0.7s;
-}
-@media(max-width:1199px){
-    header{
-        margin-left: -300px;
-        transition:0.7s;
-    }
-    
-}
-@media(min-width:1199px){
-    header{
-        transition:0.7s;
-    }
-    #button1{ 
-        visibility: hidden; 
+// #button1:hover{
+//     color: rgb(34, 202, 217);
+//     background: rgb(124, 141, 224);
+//     border-radius: 10%;
+//     transition: 0.7s;
+// }
 
-    }
+#button1{
+    display: none;
 }
 
-/*------------mobile media query-------------*/
 
-@media (min-width:375px) and (max-width:767px){
-    #button1{
-        z-index: 997px;
-        right: 15px;
-        top: 15px;
-        width: 45px;
-        height: 45px;
-        transition: 0.7s;
-        position:fixed;
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    #button1 {
+      display: block;
     }
-}
+    #header{
+      display: none;   
+    }
+    #header.show{
+      display: block;
+    }
+  
+    // .mobile-hidden {
+    //   display: none;
+    // }
+  }
+// @media(max-width:1199px){
+//     header{
+//        overflow-x: hidden;
+//         transition:0.7s;
+//     }
+// }
+// @media(min-width:1199px){
+//     header{
+//         transition:0.7s;
+//     }
+//     #button1{ 
+//         visibility: hidden; 
+//     }
+// }
+
+// /*------------mobile media query-------------*/
+
+// @media (min-width:375px) and (max-width:767px){
+//     #button1{
+//         z-index: 997px;
+//         right: 15px;
+//         top: 15px;
+//         width: 45px;
+//         height: 45px;
+//         transition: 0.7s;
+//         position:fixed;
+//     }
+// }

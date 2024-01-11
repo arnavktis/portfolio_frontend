@@ -1,4 +1,4 @@
-<header id="header">
+<header id="header" [ngClass]="{'show': isHeaderVisible}">
    <div class="d-flex flex-column">  
       <div class = "profile">
         <div class = profile-image>
@@ -14,8 +14,8 @@
         </div>
       </div>
       <nav class = "navbar">
-        <a class="navbar-brand" href="#" routerLink="/home" routerLinkActive="active" (click)="scrollToTop()"><span>Home</span></a>
-        <a class="navbar-brand" href="#" routerLink="/about" routerLinkActive="active"><span> About</span></a>
+        <a class="navbar-brand" href="#" routerLink="/home" routerLinkActive="active" (click)="toggleHeader()"><span>Home</span></a>
+        <a class="navbar-brand" href="#" routerLink="/about" routerLinkActive="active" (click)="toggleHeader()"><span> About</span></a>
         <a class="navbar-brand" href="#"><span> Resume</span></a>
         <a class="navbar-brand" href="#"><span> Portfolio</span></a>
         <a class="navbar-brand" href="#" (click)="scrollToTop()"><span> Services</span></a>
@@ -23,3 +23,4 @@
       </nav>    
     </div>
 </header>
+<button id="button1" (click)="toggleHeader()"><i class="bi bi-three-dots"></i></button>
