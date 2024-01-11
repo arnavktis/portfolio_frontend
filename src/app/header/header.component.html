@@ -14,11 +14,11 @@
         </div>
       </div>
       <nav class = "navbar">
-        <a class="navbar-brand" href="#" routerLink="/home" routerLinkActive="active"><span>Home</span></a>
+        <a class="navbar-brand" href="#" routerLink="/home" routerLinkActive="active" (click)="scrollToTop()"><span>Home</span></a>
         <a class="navbar-brand" href="#" routerLink="/about" routerLinkActive="active"><span> About</span></a>
         <a class="navbar-brand" href="#"><span> Resume</span></a>
         <a class="navbar-brand" href="#"><span> Portfolio</span></a>
-        <a class="navbar-brand" href="#"><span> Services</span></a>
+        <a class="navbar-brand" href="#" (click)="scrollToTop()"><span> Services</span></a>
         <a class="navbar-brand" href="#" routerLink="/contacts" routerLinkActive="active"><span> Contact</span>s</a>
       </nav>    
     </div>

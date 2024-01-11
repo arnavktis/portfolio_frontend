@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 
 @Component({
@@ -8,6 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HeaderComponent implements OnInit {
+  constructor(){}
+
   ngOnInit(): void {
+}
+
+@Input() scrolled: boolean = false;
+
+scrollToTop(){
+  window.scrollTo(0,0);
+  console.log("hello");
 }
 }
