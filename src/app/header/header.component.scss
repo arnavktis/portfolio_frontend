@@ -118,33 +118,35 @@ a{
     //   display: none;
     // }
   }
-
+  
+// /*------------mobile media query-------------*/
 
 @media (min-width:768px) and (max-width:1024px){
     #button1 {
         display: block;
       }
     #header{
+        
         display: none;   
     }
     #header.show{
         display: block;
     }
 }
-// @media(max-width:1199px){
-//     header{
-//        overflow-x: hidden;
-//         transition:0.7s;
-//     }
-// }
-// @media(min-width:1199px){
-//     header{
-//         transition:0.7s;
-//     }
-//     #button1{ 
-//         visibility: hidden; 
-//     }
-// }
+@media(max-width:1440px){
+    header{
+        overflow-x: hidden;
+        transition:0.7s;
+    }
+}
+@media(min-width:1199px){
+    header{
+        transition:0.7s;
+    }
+    #button1{ 
+        visibility: hidden; 
+    }
+}
 
-// /*------------mobile media query-------------*/
+
 
