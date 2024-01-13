@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/Forms';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-contacts',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent {
-
+  submit(userf: NgForm){
+    console.log(userf);
+  }
 }
