@@ -1,6 +1,7 @@
 <div class = "contacts">
     <div class = "contacts-head">
         <h1>Contacts</h1>
+        <h2>_______</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quidem autem exercitationem vero soluta. Consectetur iusto id, molestiae fugit quidem vero eaque autem eligendi. Error, culpa vero! Rem, hic aspernatur.</p>
     </div>
     <div class = "contacts-container">
@@ -17,7 +18,7 @@
                 <h4><i class="bi bi-phone"></i> Call:</h4>
                 <p>+91 9319600244</p>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14015.13729876345!2d77.2513900161832!3d28.576238456580878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3a18967c849%3A0x610743ebf06ce430!2s153%2C%20Jeewan%20Nagar%2C%20Hari%20Nagar%20Ashram%2C%20New%20Delhi%2C%20Delhi%20110014!5e0!3m2!1sen!2sin!4v1705176992392!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14015.13729876345!2d77.2513900161832!3d28.576238456580878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3a18967c849%3A0x610743ebf06ce430!2s153%2C%20Jeewan%20Nagar%2C%20Hari%20Nagar%20Ashram%2C%20New%20Delhi%2C%20Delhi%20110014!5e0!3m2!1sen!2sin!4v1705176992392!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
         </div>
         <div class = "contacts-part2">
             <form #userf = "ngForm" (ngSubmit) = "submit(userf)">
@@ -31,10 +32,11 @@
                     <label class = "label3">Subject</label>
                     <input ngModel type="text" name="subject" #subject ="ngModel" class="form-control" id="subject">
                     <label class = "label4">Comment</label>
-                    <input ngModel type="text" rows ="10" name="comment" #comment ="ngModel" class="form-control" id="comment">
+                    <textarea ngModel type="text" rows = 10 name="comment" #comment ="ngModel" class="form-control" id="comment"></textarea>
                 </div>
                 <button ngFormButton type="submit">Submit</button>
             </form>
+            
         </div>
 
     </div>
