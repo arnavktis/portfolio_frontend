@@ -33,6 +33,7 @@
     box-shadow: .5px .5px 20.5px 1.5px #3d3c3f;
 }
 
+//MEDIA QUERIES
 @media (max-width:1199px) {
     .skill-contianer{
         margin-left: 00px;
@@ -49,25 +50,6 @@
         transition: 0.7s;
     }
 }
-// @media only screen and (min-width: 375px) and (max-width: 767px){
-//     .skill-contianer{
-//         padding-top:30px;
-//         margin-left: 00px;
-//         transition: 0.7s;
-//     }
-//     .grid-container{
-//         transition: 0.7s;
-//         grid-template-columns: 176.5px 153.5px;
-//         grid-template-rows: 160.5px 160.5px 160.5px 160.5px;
-//     }
-//     .skills-content{
-//         padding-bottom: 30px;
-//     }
-//     .image{
-//         width: 150px;
-//         height: 125px;
-//     }
-// }
 
 @media(max-width:480px){
     .skill-contianer{
@@ -88,4 +70,3 @@
         height: 125px;
     }
 }
-
