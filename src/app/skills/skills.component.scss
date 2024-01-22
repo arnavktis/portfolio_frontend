@@ -1,6 +1,5 @@
 .skill-contianer{
     margin-left: 300px;
-    background: #f5f8fd;
     padding-left: 20px;
     padding-right: 20px;
     padding: 60px 0;
@@ -14,8 +13,10 @@
 .skills-content h1{
     font-size: 32px;
     font-weight: bold;
-    color: rgb(9, 16, 53);;
-
+    color: rgb(218, 223, 247);
+}
+.skills-content p{
+    color: rgb(255, 255, 255);
 }
 .grid-container{
     padding-right: 30px;
@@ -23,16 +24,27 @@
     display: grid;
     gap: 50x, 100px;
     justify-content: center;
-    grid-template-columns: 307.5px 307.5px 300px;
-    grid-template-rows: 207.5px 207.5px 200px;
+    grid-template-columns: 326.5px 326.5px 319px;
+    grid-template-rows: 224.5px 224.5px 200px;
 }
+.image:hover{
+    margin-left: -10px;
+    margin-top: -10px;
+    width: 325px;
+    height: 225px;
+    transition: 0.7s;
+    box-shadow: .5px .5px 20.5px 1.5px #dbe394;
+}
+
 .image{
+    transition: 0.7s;
     width: 300px;
     height: 200px;
     border-radius: 5.0%;
     box-shadow: .5px .5px 20.5px 1.5px #3d3c3f;
 }
 
+//MEDIA QUERIES
 @media (max-width:1199px) {
     .skill-contianer{
         margin-left: 00px;
@@ -49,26 +61,6 @@
         transition: 0.7s;
     }
 }
-// @media only screen and (min-width: 375px) and (max-width: 767px){
-//     .skill-contianer{
-//         padding-top:30px;
-//         margin-left: 00px;
-//         transition: 0.7s;
-//     }
-//     .grid-container{
-//         transition: 0.7s;
-//         grid-template-columns: 176.5px 153.5px;
-//         grid-template-rows: 160.5px 160.5px 160.5px 160.5px;
-//     }
-//     .skills-content{
-//         padding-bottom: 30px;
-//     }
-//     .image{
-//         width: 150px;
-//         height: 125px;
-//     }
-// }
-
 @media(max-width:480px){
     .skill-contianer{
         padding-top:30px;
@@ -88,4 +80,3 @@
         height: 125px;
     }
 }
-

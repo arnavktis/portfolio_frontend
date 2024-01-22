@@ -7,13 +7,24 @@
 .about-content h1{
     font-size: 32px;
     font-weight: bold;
-    color: rgb(9, 16, 53);;
+    color: rgb(218, 223, 247);
 }
+.about-content p{
+    color: rgb(255, 255, 255);
+} 
 .about-row{
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 60px;
     display: flex;
+}
+.image:hover{
+    margin-left: -10px;
+    margin-top: -10px;
+    width: 369px;
+    height: 369px;
+    transition: 0.7s;
+    box-shadow: .5px .5px 20.5px 1.5px #dbe394;
 }
 .image{
     border-radius: 5%;
@@ -32,12 +43,17 @@
     justify-content: start;
     grid-template-columns: 223px 229px;
     grid-template-rows: 42px 42px 42px;
+    color: rgb(255, 255, 255);
 }
 .about-content2 h1{
     font-size: 28px;
     font-weight: bold;
-    color: rgb(9, 16, 53);;
+    color: rgb(218, 223, 247);
 }
+.about-content2 p{
+    color: rgb(255, 255, 255);
+}
+
 //MEDIA QUERIES
 @media (max-width:1199px) {
     .about-row{
@@ -56,6 +72,14 @@
         width:550px;
         height:550px;
         border-radius: 5%;
+    }
+    .image:hover{
+        margin-left: -10px;
+        margin-top: -10px;
+        width:565px;
+        height:565px;
+        transition: 0.7s;
+        box-shadow: .5px .5px 20.5px 1.5px #dbe394;
     }
     .about-content2{
         display: flex;
@@ -76,11 +100,24 @@
 }
 
 @media(min-width:1199px){
+    .image:hover{
+        margin-left: -10px;
+        margin-top: -10px;
+        width: 369px;
+        height: 369px;
+        transition: 0.7s;
+        box-shadow: .5px .5px 20.5px 1.5px #dbe394;
+    }
+    .image{
+        border-radius: 5%;
+        width:344px;
+        height:344px;
+        transition: 0.7s;
+    }
     .about-row,
     .about-container,
     .grid-container,
     .about-content2,
-    .image,
     .about-para,
     .about-container{
         transition:0.7s;
@@ -91,6 +128,12 @@
 
 @media(max-width:480px){
     .image{
+        transition: 0.7s;
+        width:350px;
+        height:350px;
+        border-radius: 5%;
+    }
+    .image:hover{
         transition: 0.7s;
         width:350px;
         height:350px;
@@ -108,7 +151,6 @@
     .about-content2 h1{
         font-size: 20px;
         font-weight: bold;
-        color: rgb(9, 16, 53);;
     }
     .grid-container{
         grid-template-columns: 305px;
@@ -119,7 +161,6 @@
     .about-para,
     .about-para2 {
         width:350px;
-        text-align:center;
     }
 }
 

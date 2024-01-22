@@ -15,12 +15,15 @@
 .contacts-head h1{
     font-size: 32px;
     font-weight: bold;
-    color: #173b6c;
+    color: rgb(218, 223, 247);
 }
 .contacts-head h2{
     font-size: 20px;
     font-weight: bold;
-    color: #316bbc;
+    color: #92a2b8;
+}
+.contacts-head p{
+    color: #ffffff;
 }
 .contacts-container{
     display: flex;
@@ -49,14 +52,12 @@
     background-color: rgb(34, 202, 217);
     font-size: 20px;
     color: #fff;
-    margin-top: 15px;
-    margin-left:43%;
     padding: 5px;
     border-radius: 5px;
     border-color: transparent;
 }
 
-
+//MEDIA QUERIES
 @media (max-width:1199px) {
     .contacts{
         transition: 0.7s;
@@ -65,28 +66,19 @@
     .contacts-container{
         display: flex;
         justify-content: center;
+        transition: 0.7s;
     }
 }
 @media (min-width:1199px) {
     .contacts{
         transition: 0.7s;
     }
+    .button-head{
+        margin-top: 15px;
+        margin-left: 43%;
+    }
 }
-// @media (max-width:1024px) {
-//     .contacts{
-//         margin-left: 00px;
-//         transition: 0.7s;
-//     }
-//     .contacts-container{
-//         display: flex;
-//         justify-content: center;
-//     }
-// }
-// @media (min-width:768px) {
-//     .contacts{
-//         transition: 0.7s;
-//     }
-// }
+
 @media(max-width:480px){
     .contacts{
         padding-top:30px;
@@ -98,23 +90,32 @@
         justify-content: center;
         padding-top: 30px;
         flex-wrap: wrap;
-        transition: 0.7s;
+        transition: 0.7s;      
     }
     .contacts-part1{
         width: 300px;
-        margin-bottom: 35px;
         margin-right: 00px;
         transition: 0.7s;
+        background-color: #f9f9f900;
+        box-shadow: 0.5px 0.5px 20.5px 1.5px #6341a6fc;
+        color: #fff;
     }
     .contacts-part2{
         width: 300px;
         margin-left: 00px;
         transition: 0.7s;
+        background-color: #f9f9f900;
+        box-shadow: 0.5px 0.5px 20.5px 1.5px #6341a6fc;
+        color: #fff;
     }
     .maps{
         width: 250px;
         height: 350px;
         border: 0;
         transition: 0.7s;
+    }
+    .button-head{
+        margin-top: 15px;
+        margin-left: 40%;
     }
 }
