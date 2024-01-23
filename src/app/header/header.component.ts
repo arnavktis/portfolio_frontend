@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -27,5 +28,20 @@ toggleHeader() {
   this.isHeaderVisible = !this.isHeaderVisible;
 }
 
+toHome(){
+  document.getElementById("home")?.scrollIntoView({behavior:"smooth"});
+}
+
+toAbout(){
+  document.getElementById("about-section")?.scrollIntoView({behavior:"smooth"});
+}
+
+toSkills(){
+  document.getElementById("skills")?.scrollIntoView({behavior:"smooth"});
+}
+
+toContacts(){
+  document.getElementById("contacts")?.scrollIntoView({behavior:"smooth"});
+}
 
 }
