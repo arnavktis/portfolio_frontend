@@ -10,7 +10,7 @@ import Typed from 'typed.js';
 export class HomePageComponent implements OnInit {
   ngOnInit(): void {
     const options = {
-      strings: ['Frontend Developer.', 'Backend Developer.'],
+      strings: ['Frontend Developer.', 'Backend Developer.', 'Machine Learning Enthusiast.'],
       typeSpeed: 100,
       backSpeed: 50,
       showCursor: true,
