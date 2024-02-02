@@ -8,6 +8,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { CertificateComponent } from './certificate/certificate.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     HomePageComponent,
     AboutComponent,
     SkillsComponent,
-    ContactsComponent
+    ContactsComponent,
+    CertificateComponent
   ],
   imports: [
     BrowserModule,

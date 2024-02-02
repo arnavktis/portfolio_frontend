@@ -14,15 +14,16 @@
         </div>
       </div>
       <nav class = "navbar">
-        <a class="navbar-brand" href="#" routerLink="/home" routerLinkActive="active" (click)="toggleHeader()"><span>Home</span></a>
-        <a class="navbar-brand" href="#" routerLink="/about" routerLinkActive="active" (click)="toggleHeader()"><span> About</span></a>
-        <a class="navbar-brand" href="#" routerLink="/skills" routerLinkActive="active" (click)="toggleHeader()"><span> Skills</span></a>
-        <a class="navbar-brand" href="#"><span> Portfolio</span></a>
-        <a class="navbar-brand" href="#"><span> Certificates</span></a>
-        <a class="navbar-brand" href="#" routerLink="/contacts" routerLinkActive="active"><span> Contact</span>s</a>
+        <li class="navbar-brand" href="#" routerLinkActive="active" (click)="toHome()"><span>Home</span></li>
+        <li class="navbar-brand" href="#" routerLinkActive="active" (click)="toAbout()"><span>About</span></li>
+        <li class="navbar-brand" href="#" routerLinkActive="active" (click)="toSkills()"><span>Skills</span></li>
+        <li class="navbar-brand" href="#"><span> Portfolio</span></li>
+        <li class="navbar-brand" href="#" routerLink="/certificate" routerLinkActive="active" ><span>Certificates</span></li>
+        <li class="navbar-brand" href="#" routerLink="/contacts" routerLinkActive="active" (click)="toContacts()"><span> Contact</span></li>
         <a href="../../assets/ArnavkhannaResume .pdf" download="Arnavkhanna.pdf" class="navbar-brand">Download My Resume</a>
       </nav>    
     </div>
 </header>
 <button id="button1" (click)="toggleHeader()"><i class="bi bi-three-dots"></i></button>
 <button id="button-up" (click)="scrollToTop()"><i class="bi bi-arrow-up"></i></button>
+
