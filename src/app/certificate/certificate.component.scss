@@ -11,4 +11,30 @@
 }
 .certificate_content p{
     color: rgb(255, 255, 255);
-} 
+}
+.certificate_content2{
+    padding: 30px;
+}
+.certificate_content2 p{
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width:1199px) {
+    .certificate_container{
+        margin-left: 00px;
+        transition: 0.7s;
+    }
+}
+@media(min-width:1199px){
+    .certificate_container{
+        transition: 0.7s;
+    }  
+}
+/*mobile media query*/
+@media(max-width:480px){
+    .certificate_container{
+        margin-left: 00px;
+        transition: 0.7s;
+    }
+}
