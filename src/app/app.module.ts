@@ -10,6 +10,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { CertificateComponent } from './certificate/certificate.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AboutComponent,
     SkillsComponent,
     ContactsComponent,
-    CertificateComponent
+    CertificateComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
