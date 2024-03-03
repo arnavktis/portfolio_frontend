@@ -1,0 +1,40 @@
+.certificate_container{
+    margin-left: 300px;
+}
+.certificate_content{
+    padding: 30px;
+}
+.certificate_content h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(218, 223, 247);
+}
+.certificate_content p{
+    color: rgb(255, 255, 255);
+}
+.certificate_content2{
+    padding: 30px;
+}
+.certificate_content2 p{
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width:1199px) {
+    .certificate_container{
+        margin-left: 00px;
+        transition: 0.7s;
+    }
+}
+@media(min-width:1199px){
+    .certificate_container{
+        transition: 0.7s;
+    }  
+}
+/*mobile media query*/
+@media(max-width:480px){
+    .certificate_container{
+        margin-left: 00px;
+        transition: 0.7s;
+    }
+}
