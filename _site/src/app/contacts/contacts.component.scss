@@ -1,0 +1,122 @@
+.contacts{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 300px;
+
+}
+.maps {
+    width: 100%; /* Adjust this value as needed */
+    height: 300px; /* Adjust this value as needed */
+  }
+.contacts-head{
+    padding-left: 30px;
+    padding-right: 30px;
+    position:static;
+}
+.contacts-head h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(218, 223, 247);
+}
+.contacts-head h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #92a2b8;
+}
+.contacts-head p{
+    color: #ffffff;
+}
+.contacts-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;  
+}
+.contacts-part1{
+    background-color: #f5f8fd;
+    flex-wrap: wrap;
+    width: 500px;
+    padding: 30px;
+    margin-right: 12.5px;
+    border-radius: 4%;
+    box-shadow: .5px .5px 20.5px 1.5px #3d3c3f;
+}
+.contacts-part2{
+    background-color: #f5f8fd;
+    flex-wrap: wrap;
+    width: 500px;
+    padding: 30px;
+    margin-left: 12.5px;
+    border-radius: 4%;
+    box-shadow: .5px .5px 20.5px 1.5px #3d3c3f;
+}
+.button1{
+    background-color: rgb(34, 202, 217);
+    font-size: 20px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+//MEDIA QUERIES
+@media (max-width:1199px) {
+    .contacts{
+        transition: 0.7s;
+        margin-left: 00px;
+    }
+    .contacts-container{
+        display: flex;
+        justify-content: center;
+        transition: 0.7s;
+    }
+}
+@media (min-width:1199px) {
+    .contacts{
+        transition: 0.7s;
+    }
+    .button-head{
+        margin-top: 15px;
+        margin-left: 43%;
+    }
+}
+
+@media(max-width:480px){
+    .contacts{
+        padding-top:30px;
+        margin-left: 00px;
+        transition: 0.7s;
+    }
+    .contacts-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        flex-wrap: wrap;
+        transition: 0.7s;      
+    }
+    .contacts-part1{
+        width: 300px;
+        margin-right: 00px;
+        transition: 0.7s;
+        background-color: #f9f9f900;
+        box-shadow: 0.5px 0.5px 20.5px 1.5px #6341a6fc;
+        color: #fff;
+    }
+    .contacts-part2{
+        width: 300px;
+        margin-left: 00px;
+        transition: 0.7s;
+        background-color: #f9f9f900;
+        box-shadow: 0.5px 0.5px 20.5px 1.5px #6341a6fc;
+        color: #fff;
+    }
+    .maps{
+        width: 250px;
+        height: 350px;
+        border: 0;
+        transition: 0.7s;
+    }
+    .button-head{
+        margin-top: 15px;
+        margin-left: 40%;
+    }
+}

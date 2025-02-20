@@ -1,0 +1,35 @@
+# Site Configuration
+title: Your Site Title
+description: A description of your site
+url: https://example.com
+baseurl: ""
+
+# Site Build Configuration
+markdown: kramdown
+theme: minima
+
+# Build Commands
+build_command: jekyll build
+serve_command: jekyll serve
+
+# Exclude Paths
+exclude:
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+
+# Include Files
+include:
+  - Gemfile
+  - Gemfile.lock
+
+# Pagination Configuration
+paginate: 5
+
+# Development Configuration
+development:
+  destination: ./_site-dev
+  incremental: true
+  future: true
+  drafts: true

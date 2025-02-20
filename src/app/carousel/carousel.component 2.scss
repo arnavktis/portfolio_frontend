@@ -1,0 +1,17 @@
+.carousal-container{
+    width: 650px;
+    margin: auto;
+    padding: 15px;
+}
+.img{
+    width:650px;
+}
+
+/*mobile media query*/
+@media(max-width:480px){
+    .carousal-container{
+        width: 325px;
+        margin: auto;
+        transition: 0.7s;
+    }
+}
